@@ -29,13 +29,8 @@ footer {
 
 .main-section {
   background-color: purple;
-  width: 50vw;
+  width: 25vw;
   display: flex;
   justify-content: space-between;
-}
-
-.card-main-section {
-  background-color: green;
-  width: 25vw;
   border: solid black 1px;
 }
