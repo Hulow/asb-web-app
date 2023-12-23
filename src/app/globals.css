@@ -27,10 +27,21 @@ footer {
   justify-content: space-between;
 }
 
-.main-section {
+.section {
   background-color: purple;
   width: 25vw;
-  display: flex;
-  justify-content: space-between;
   border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info {
+  background-color: green;
+  justify-content: space-around;
+}
+
+.sub-section {
+  background-color: yellow;
+  height: 25vh;
 }

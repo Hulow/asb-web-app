@@ -4,14 +4,20 @@ export default function Home() {
   return (
     <body>
       <div className="container">
-        <header>Header</header>
+        <header></header>
         <div className="main">
-          <div className="main-section"></div>
-          <div className="main-section"></div>
-          <div className="main-section"></div>
-          <div className="main-section"></div>
+          <div className="section">
+            <div className="sub-section"></div>
+            <div className="sub-section"></div>
+          </div>
+          <div className="section"></div>
+          <div className="section"></div>
+          <div className="section info">
+            <div className="sub-section"></div>
+            <div className="sub-section"></div>
+          </div>
         </div>
-        <footer>Footer</footer>
+        <footer></footer>
       </div>
     </body>
   );
