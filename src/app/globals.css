@@ -13,7 +13,6 @@ body {
 
 header,
 footer {
-  background-color: red;
   flex-basis: 50px;
   display: flex;
   align-items: center;
@@ -21,14 +20,12 @@ footer {
 }
 
 .main {
-  background-color: #eee;
   flex: 1;
   display: flex;
   justify-content: space-between;
 }
 
 .section {
-  background-color: purple;
   width: 25vw;
   border: solid black 1px;
   display: flex;
@@ -37,11 +34,9 @@ footer {
 }
 
 .info {
-  background-color: green;
   justify-content: space-around;
 }
 
 .sub-section {
-  background-color: yellow;
   height: 25vh;
 }

@@ -1,3 +1,4 @@
+import { Logo } from "@/components/logo/Logo";
 import "./globals.css";
 
 export default function Home() {
@@ -7,7 +8,9 @@ export default function Home() {
         <header></header>
         <div className="main">
           <div className="section">
-            <div className="sub-section"></div>
+            <div className="sub-section">
+              <Logo></Logo>
+            </div>
             <div className="sub-section"></div>
           </div>
           <div className="section"></div>
