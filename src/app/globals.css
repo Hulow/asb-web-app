@@ -27,12 +27,15 @@ footer {
   justify-content: space-between;
 }
 
-.main-section-1 {
+.main-section {
   background-color: purple;
   width: 50vw;
+  display: flex;
+  justify-content: space-between;
 }
 
-.main-section-2 {
-  background-color: blue;
-  width: 50vw;
+.card-main-section {
+  background-color: green;
+  width: 25vw;
+  border: solid black 1px;
 }
