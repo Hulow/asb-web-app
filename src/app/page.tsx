@@ -4,9 +4,12 @@ export default function Home() {
   return (
     <body>
       <div className="container">
-        <div className="header">Header</div>
-        <div className="main">Main</div>
-        <div className="footer">Footer</div>
+        <header>Header</header>
+        <div className="main">
+          <div className="main-section-1">Section 1</div>
+          <div className="main-section-2">Section 2</div>
+        </div>
+        <footer>Footer</footer>
       </div>
     </body>
   );

@@ -4,3 +4,23 @@ body {
   border: solid rgb(51, 156, 80) 5px;
   background-color: rgb(29, 28, 31);
 }
+
+.container {
+  height: 100vh; /* for shorter content */
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  background-color: #eee;
+  flex: 1;
+}
+
+header,
+footer {
+  background-color: red;
+  flex-basis: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
