@@ -1,4 +1,5 @@
 import { Logo } from "@/components/logo/Logo";
+import { MeasurementButton } from "@/components/buttons/MeasurementButton";
 import "./globals.css";
 
 export default function Home() {
@@ -16,7 +17,9 @@ export default function Home() {
           <div className="section"></div>
           <div className="section"></div>
           <div className="section info">
-            <div className="sub-section"></div>
+            <div className="sub-section">
+              <MeasurementButton></MeasurementButton>
+            </div>
             <div className="sub-section"></div>
           </div>
         </div>
