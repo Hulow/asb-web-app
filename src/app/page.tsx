@@ -1,6 +1,7 @@
 import { Logo } from "@/components/logo/Logo";
-import { MeasurementButton } from "@/components/buttons/MeasurementButton";
+import { MeasurementButton } from "@/components/buttons/measurement/MeasurementButton";
 import "./globals.css";
+import { StationButton } from "@/components/buttons/station/StationButton";
 
 export default function Home() {
   return (
@@ -20,7 +21,9 @@ export default function Home() {
             <div className="sub-section">
               <MeasurementButton></MeasurementButton>
             </div>
-            <div className="sub-section"></div>
+            <div className="sub-section">
+              <StationButton></StationButton>
+            </div>
           </div>
         </div>
         <footer></footer>
