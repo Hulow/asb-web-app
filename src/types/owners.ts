@@ -5,7 +5,6 @@ export interface OwnersOverview {
 
 export interface OwnerCabinetsOverview {
   owner: OwnerOverview;
-  cabinetsLength: number;
   cabinets: CabinetOverview[];
 }
 
