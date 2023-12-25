@@ -2,32 +2,23 @@ import { Logo } from "@/components/logo/Logo";
 import { MeasurementButton } from "@/components/buttons/measurement/MeasurementButton";
 import "./globals.css";
 import { StationButton } from "@/components/buttons/station/StationButton";
+import { config } from "@/config/config";
 
 export default function Home() {
+  const logoConfig = config.logo;
   return (
-    <body>
-      <div className="container">
-        <header></header>
-        <div className="main">
-          <div className="section">
-            <div className="sub-section">
-              <Logo></Logo>
-            </div>
-            <div className="sub-section"></div>
-          </div>
-          <div className="section"></div>
-          <div className="section"></div>
-          <div className="section info">
-            <div className="sub-section">
-              <MeasurementButton></MeasurementButton>
-            </div>
-            <div className="sub-section">
-              <StationButton></StationButton>
-            </div>
-          </div>
-        </div>
-        <footer></footer>
+    <div className="container">
+      <div className="sub-container">
+        <Logo />
       </div>
-    </body>
+      <div className="sub-container">
+        <div className="container-component">
+          <StationButton />
+        </div>
+        <div className="container-component">
+          <MeasurementButton />
+        </div>
+      </div>
+    </div>
   );
 }

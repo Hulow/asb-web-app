@@ -1,3 +1,4 @@
+import { SecondaryLogo } from "@/components/logo/Logo";
 import "./MeasurementButton.css";
 
 export function MeasurementButton() {
@@ -8,8 +9,10 @@ export function MeasurementButton() {
       </div>
       <div className="measurement-button-content"></div>
       <div className="measurement-button-info">
-        <h2>Currently</h2>
-        <h2>7 Cabinets</h2>
+        <div>
+          <SecondaryLogo />
+        </div>
+        <h2> 7 Cabinets</h2>
       </div>
     </div>
   );

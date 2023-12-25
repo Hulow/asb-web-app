@@ -18,7 +18,7 @@ export function StationButton() {
         className="station-button-title"
         onClick={() => updateIsButtonActiveState()}
       >
-        <h1>ABOUT THE STATION</h1>
+        <h1>THE STATION</h1>
         {isButtonActive ? <StationInfo></StationInfo> : undefined}
       </div>
     </div>
