@@ -36,15 +36,13 @@ export function SecondaryLogo() {
 export function SecondaryLogoV2() {
   return (
     <div className="secondary-logo-v2-container">
-      <div className="image-logo-container">
-        <Image
-          priority
-          src="/ASB_secondary.svg"
-          width={150}
-          height={100}
-          alt="ASB Logo"
-        />
-      </div>
+      <Image
+        priority
+        src="/ASB_secondary.svg"
+        width={150}
+        height={150}
+        alt="ASB Logo"
+      />
     </div>
   );
 }

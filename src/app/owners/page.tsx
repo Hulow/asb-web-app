@@ -29,15 +29,17 @@ export default async function Owners() {
               <div className="card-owner-header">
                 <h2>{owner.owner.ownername}</h2>
               </div>
-              <div className="card-owner-title">
-                <SecondaryLogoV2 />
-              </div>
               <div className="card-owner-body">
-                {owner.cabinets.map((cabinet) => {
-                  return (
-                    <h4 key={cabinet.cabinetUid}>{cabinet.productName}</h4>
-                  );
-                })}
+                <div className="card-owner-title">
+                  <SecondaryLogoV2 />
+                </div>
+                <div className="card-owner-content">
+                  {owner.cabinets.map((cabinet) => {
+                    return (
+                      <p key={cabinet.cabinetUid}>- {cabinet.productName}</p>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           );
