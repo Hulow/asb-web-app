@@ -9,10 +9,11 @@
 
 .owners-header {
   height: 10%;
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: solid rgb(81, 245, 2);
 }
 
 .cards-owner {
