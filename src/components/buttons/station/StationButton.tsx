@@ -7,7 +7,6 @@ export function StationButton() {
   const [isButtonActive, setIsButtonActive] = useState(false);
 
   const updateIsButtonActiveState = () => {
-    console.log(isButtonActive);
     if (isButtonActive) setIsButtonActive(false);
     if (!isButtonActive) setIsButtonActive(true);
   };
@@ -18,7 +17,7 @@ export function StationButton() {
         className="station-button-title"
         onClick={() => updateIsButtonActiveState()}
       >
-        <h1>THE STATION</h1>
+        <h1>STATION</h1>
         {isButtonActive ? <StationInfo></StationInfo> : undefined}
       </div>
     </div>

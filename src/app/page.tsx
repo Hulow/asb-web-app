@@ -2,10 +2,9 @@ import { Logo } from "@/components/logo/Logo";
 import { MeasurementButton } from "@/components/buttons/measurement/MeasurementButton";
 import "./globals.css";
 import { StationButton } from "@/components/buttons/station/StationButton";
-import { config } from "@/config/config";
+import Link from "next/link";
 
 export default function Home() {
-  const logoConfig = config.logo;
   return (
     <div className="container">
       <div className="sub-container">
@@ -16,7 +15,9 @@ export default function Home() {
           <StationButton />
         </div>
         <div className="container-component">
-          <MeasurementButton />
+          <Link href="/owners" style={{ textDecoration: "none" }}>
+            <MeasurementButton />
+          </Link>
         </div>
       </div>
     </div>
