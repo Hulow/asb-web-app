@@ -2,13 +2,11 @@
   margin: 0;
   display: flex;
   height: 100%;
-  /* background-color: blue; */
   color: rgb(81, 245, 2);
   flex-direction: column;
 }
 
 .station-button-title {
-  /* background-color: green; */
   border: solid;
   border-color: rgb(81, 245, 2);
   border-radius: 15px;
