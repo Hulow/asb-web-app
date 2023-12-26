@@ -7,8 +7,15 @@ export interface FetchOptions {
   };
 }
 
-export async function httpClient(endpoint: string, options: FetchOptions) {
+export async function httpClient(method: string, endpoint: string) {
   const url = config.asbBaseUrl + endpoint;
+
+  const options: FetchOptions = {
+    method: method,
+    headers: {
+      Authorization: config.asbKeyUrl,
+    },
+  };
   const response = await fetch(url, options);
   return await response.json();
 }
