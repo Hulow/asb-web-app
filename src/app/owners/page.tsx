@@ -1,6 +1,6 @@
 import "./page.css";
 import { config } from "@/config/config";
-import { httpClient, FetchOptions } from "@/lib/http-client";
+import { httpClient } from "@/lib/http-client";
 import { OwnersOverview } from "@/types/owner";
 import { CardOwner } from "@/components/cards/owner/OwnerCard";
 import { sanitizeOwnername } from "@/utils/utils";
