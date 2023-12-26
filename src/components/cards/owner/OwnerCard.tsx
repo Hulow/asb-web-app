@@ -1,6 +1,6 @@
 import "./OwnerCard.css";
 import { SecondaryLogoV2 } from "@/components/logo/Logo";
-import { OwnerCabinetsOverview } from "@/types/owners";
+import { OwnerCabinetsOverview } from "@/types/owner";
 
 export function CardOwner({ owner, cabinets }: OwnerCabinetsOverview) {
   return (
