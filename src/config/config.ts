@@ -5,6 +5,12 @@ interface Config {
     owner: {
       ownerOverview: string;
     };
+    cabinet: {
+      cabinetsPerOwner: string;
+    };
+    measurement: {
+      measurementPerCabinet: string;
+    };
   };
 }
 
@@ -14,6 +20,12 @@ export const config: Config = {
   endpoints: {
     owner: {
       ownerOverview: "/api/owners-overview",
+    },
+    cabinet: {
+      cabinetsPerOwner: "/api/cabinets-per-owner/",
+    },
+    measurement: {
+      measurementPerCabinet: "/api/measurement/",
     },
   },
 };

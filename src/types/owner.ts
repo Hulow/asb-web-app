@@ -1,3 +1,5 @@
+import { CabinetOverview } from "./cabinet";
+
 export interface OwnersOverview {
   ownersLength: number;
   owners: OwnerCabinetsOverview[];
@@ -14,10 +16,7 @@ export interface OwnerOverview {
   createdAt: Date;
 }
 
-export interface CabinetOverview {
-  cabinetUid: string;
-  brandName: string;
-  productName: string;
-  enclosureType: string;
-  createdAt: Date;
+export interface OwnerDescription {
+  ownername: string;
+  description: string;
 }
