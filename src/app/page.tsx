@@ -4,7 +4,7 @@ import "./globals.css";
 import { StationButton } from "@/components/buttons/station/StationButton";
 import Link from "next/link";
 
-export default function Home() {
+export default function App() {
   return (
     <div className="container">
       <div className="sub-container">
