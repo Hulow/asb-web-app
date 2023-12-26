@@ -15,9 +15,12 @@
 }
 
 .cabinets-per-owner-cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 95%;
-  margin-top: 1%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
+  justify-items: stretch;
+  align-items: center;
+  grid-gap: 15px;
 }
