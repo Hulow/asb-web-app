@@ -1,11 +1,13 @@
 .cabinet-container {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .cabinet-props {
   width: 100%;
+  height: 70%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
@@ -18,6 +20,7 @@
 }
 
 .cabinet-description {
+  height: 30%;
   margin-top: 2%;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.029);
