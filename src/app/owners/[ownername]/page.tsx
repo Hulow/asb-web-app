@@ -28,7 +28,7 @@ export default async function CabinetsPerOwner({
             <Link
               key={cabinet.cabinet.cabinetUid}
               style={{ textDecoration: "none" }}
-              href={`/owners/${cabinetsPerOwner.owner.ownername}/${cabinet.cabinet.cabinetUid}`}
+              href={`/owners/${cabinetsPerOwner.owner.ownername}/measurement/${cabinet.cabinet.cabinetUid}`}
             >
               <CabinetCard
                 cabinet={cabinet.cabinet}

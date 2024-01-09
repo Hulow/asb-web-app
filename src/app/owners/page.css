@@ -18,8 +18,11 @@
 }
 
 .owner-cards {
-  width: 95%;
-  margin-top: 1%;
-  display: flex;
-  flex-wrap: wrap;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  justify-items: stretch;
+  align-items: center;
+  grid-gap: 15px;
 }
