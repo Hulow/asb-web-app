@@ -25,15 +25,7 @@ interface FrequencyGraph {
   phases: number[];
 }
 
-export function Chart(measurement: FrequencyGraph) {
-  const options = {
-    scales: {
-      xAxes: {
-        display: true,
-        type: "logarithmic",
-      },
-    },
-  };
+export function FrequencyChart(measurement: FrequencyGraph) {
   return (
     <Line
       data={{

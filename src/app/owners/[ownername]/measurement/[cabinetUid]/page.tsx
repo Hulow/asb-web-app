@@ -1,11 +1,10 @@
 "use client";
 import "./page.css";
-import { httpClient } from "@/lib/http-client";
 import { config } from "@/config/config";
 import { Measurement } from "@/types/measurement";
 import { Cabinet } from "@/components/cabinet/Cabinet";
 import { Driver } from "@/components/driver/Driver";
-import { Chart } from "@/components/chart/Chart";
+import { FrequencyChart } from "@/components/chart/frequency/Chart";
 import { useEffect, useRef, useState } from "react";
 
 interface MeasurementParam {
@@ -60,7 +59,43 @@ export default function MeasurementPage({ params }: MeasurementParam) {
         <div className="frequency-title">
           <h2>Frequency Response</h2>
         </div>
-        <div className="chart-container">{<Chart {...frequency} />}</div>
+        <div className="chart-container">
+          {<FrequencyChart {...frequency} />}
+        </div>
+        <div className="frequency-settings">
+          <div className="setting">
+            <h3>Software</h3>
+            <p>{frequency.measuredBy}</p>
+          </div>
+          <div className="setting">
+            <h3>Source</h3>
+            <p>{frequency.source}</p>
+          </div>
+          <div className="setting">
+            <h3>Format</h3>
+            <p>{frequency.sweepLength}</p>
+          </div>
+          <div className="setting">
+            <h3>Measured at</h3>
+            <p>{frequency.measuredAt}</p>
+          </div>
+          <div className="setting">
+            <h3>Weighting mode</h3>
+            <p>{frequency.frequencyWeightings}</p>
+          </div>
+          <div className="setting">
+            <h3>Target level</h3>
+            <p>{frequency.targetLevel}</p>
+          </div>
+          <div className="setting">
+            <h3>Smoothing</h3>
+            <p>{frequency.smoothing}</p>
+          </div>
+          <div className="setting">
+            <h3>Note</h3>
+            <p>{frequency.note}</p>
+          </div>
+        </div>
       </div>
     </div>
   );
